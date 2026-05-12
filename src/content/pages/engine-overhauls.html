@@ -1,0 +1,60 @@
+---
+title: "Helicopter Engine Overhauls & Repair | Creative Rotorcraft Maintenance"
+description: "Complete R22 and R44 12-year overhauls, Lycoming engine service, gearbox rebuilds, and accident repair at our Chino Airport facility."
+permalink: "/engine-overhauls/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Overhauls & Repairs</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/engine-overhauls/" class="cs-link cs-active">Engine Overhauls</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="helicopter engine" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lycoming engine parts" width="522" height="581" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gearbox rebuild" width="390" height="376" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Power & Reliability</span>
+                <h2 class="cs-title">Precision Overhauls & Accident Repair</h2>
+                <p class="cs-text">
+                    Major overhauls and post-incident rebuilds require absolute precision and a deep understanding of manufacturer tolerances. Our facility specializes in complete R22 and R44 overhauls, strictly adhering to the mandatory 12-Year/2200-Hour inspection requirements.
+                </p>
+                <p class="cs-text">
+                    Beyond standard overhauls, our team provides comprehensive helicopter repairs and modifications, including structural accident repair. Whether you need an engine rebuilt or an airframe restored, we manage the entire process in-house to guarantee your rotorcraft returns to the flight line performing flawlessly.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Consult Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

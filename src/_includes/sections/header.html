@@ -32,21 +32,30 @@
                         </a>
                     </li>
                     <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Projects
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
-                        </button>
-                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
-                            <li class="cs-drop-li">
-                                <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/project-two/" class="cs-li-link cs-drop-link">Project Two</a>
-                            </li>
-                        </ul>
-                    </li>
+<!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+<li class="cs-li cs-dropdown">
+    <button class="cs-li-link cs-dropdown-toggle {% if page.url == '/routine-maintenance/' or page.url == '/aog-support/' or page.url == '/engine-overhauls/' or page.url == '/parts-avionics/' or page.url == '/buy-sell/' %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="Services-dropdown-toggle">
+        Services
+        <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
+    </button>
+    <ul class="cs-drop-ul" aria-labelledby="Services-dropdown-toggle">
+        <li class="cs-drop-li">
+            <a href="/routine-maintenance/" class="cs-li-link cs-drop-link">Routine Maintenance</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/aog-support/" class="cs-li-link cs-drop-link">AOG Support</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/engine-overhauls/" class="cs-li-link cs-drop-link">Engine Overhauls</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/parts-avionics/" class="cs-li-link cs-drop-link">Parts & Avionics</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/buy-sell/" class="cs-li-link cs-drop-link">Buy & Sell</a>
+        </li>
+    </ul>
+</li>
                     <li class="cs-li">
                         <a href="/reviews/" class="cs-li-link {% if page.url == "/reviews/" %} cs-active {% endif %}" {% if page.url == "/reviews/" %} aria-current="page" {% endif %}>
                             Reviews

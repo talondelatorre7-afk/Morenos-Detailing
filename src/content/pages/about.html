@@ -1,51 +1,46 @@
 ---
-title: "About | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "About Us | Creative Rotorcraft Maintenance | Chino, CA"
+description: "Creative Rotorcraft Maintenance provides 24/7 helicopter repair, annual inspections, overhauls, and parts out of Chino Airport."
 permalink: "/about/"
+tags: "sitemap"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <!-- Load the page-specific stylesheet for About -->
+    <link rel="stylesheet" href="/assets/css/about.css" />
 {% endblock %}
 
 {% block body %}
-
     <!-- ============================================ -->
-    <!--                   Banner                     -->
+    <!--                    Banner                    -->
     <!-- ============================================ -->
 
-    <div id="banner-310">
+    <section id="banner-310">
         <div class="cs-container">
             <span class="cs-int-title">About Us</span>
             <div class="cs-breadcrumbs">
                 <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
+                <a href="/about/" class="cs-link cs-active">About</a>
             </div>
         </div>
-        <!--Background Image-->
+        <!-- Background Image -->
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 1920, height: 1080 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 1920, height: 1080 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 1920, height: 1080 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl '/assets/images/landing.jpg' | resize({ width: 1920, height: 1080 }) | jpeg %}" alt="helicopter in hangar" width="1920" height="1080" loading="eager" decoding="async">
         </picture>
-    </div>
+    </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                Side By Side                  -->
     <!-- ============================================ -->
 
     <section id="RPsbs-313">
@@ -54,51 +49,55 @@ permalink: "/about/"
             <div class="cs-image-group">
                 <picture class="cs-picture cs-picture1">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
                     <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
                     <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" decoding="async">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="mechanics working on helicopter" width="522" height="581" loading="lazy" decoding="async">
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
                     <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
                     <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/construction.jpg' | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/construction.jpg' | resize({ width: 780, height: 752 }) | jpeg %}" alt="helicopter parts" width="390" height="376" loading="lazy" decoding="async">
                 </picture>
             </div>
             <!-- Right Content Section-->
             <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About CodeStitch</h2>
+                <span class="cs-topper">Who We Are</span>
+                <h2 class="cs-title">
+                    Setting the Standard for Helicopter Maintenance
+                </h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Creative Rotorcraft Maintenance (CRM) is a premier helicopter repair station based out of Chino Airport (CNO). We provide the highest standard of aviation maintenance services 24 hours a day, 7 days a week. We specialize in maintaining and servicing a wide range of helicopter makes and models, including Robinson (R22, R44, R66), Eurocopter/Airbus (EC120, AS350), MD500, and Bell platforms.
+                </p>
+                <p class="cs-text" id="services">
+                    Our highly experienced staff is ready to help and just a phone call away. We proudly provide superior workmanship with fast turnaround times suited to meet your rigorous flight requirements. Whether you need a 100-hour inspection, a complete 12-year overhaul, accident repair, or emergency AOG mobile services, CRM has the parts, tools, and talent to get you safely back in the air.
                 </p>
                 <div class="cs-quote">
                     <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                        "All employees are responsible for our rigorous safety procedures at all times. Delivering industry-leading standards isn't just our goal—it's our absolute requirement."
                     </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
+                    <span class="cs-name">Jose Rodriguez</span>
+                    <span class="cs-job">Co-Owner & Lead A&P</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quotes" width="136" height="77">
                 </div>
-                <a href="/contact/" class="cs-button-solid">Get in Touch</a>
             </div>
         </div>
     </section>

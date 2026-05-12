@@ -50,17 +50,19 @@
                 <span class="cs-header">Services</span>
             </li>
             <li class="cs-nav-li">
-                <!-- Using anchor links so they can navigate to a specific section on the about/services page -->
-                <a class="cs-nav-link" href="/about/#services">Routine Maintenance</a>
+                <a class="cs-nav-link" href="/routine-maintenance/">Routine Maintenance</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/about/#services">AOG Support</a>
+                <a class="cs-nav-link" href="/aog-support/">AOG Support</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/about/#services">Engine Overhauls</a>
+                <a class="cs-nav-link" href="/engine-overhauls/">Engine Overhauls</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/about/#services">Parts & Avionics</a>
+                <a class="cs-nav-link" href="/parts-avionics/">Parts & Avionics</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/buy-sell/">Buy & Sell</a>
             </li>
         </ul>
         <!-- Contact Info -->
@@ -71,7 +73,6 @@
             <li class="cs-contact-li">
                 <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
                     {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
                     {{ client.address.city }}, {{ client.address.state }}
                     {{ client.address.zip }}
                 </a>
@@ -84,4 +85,10 @@
             </li>
         </ul>
     </div>
+    <!-- Bottom Footer Copyright -->
+        <div class="cs-bottom">
+            <span class="cs-copyright">
+                &copy; 2026 Creative Rotorcraft Maintenance. Designed by <a href="https://deepseadigital.netlify.app" class="cs-copyright-link" target="_blank" rel="noopener">Deep Sea Digital</a>.
+            </span>
+        </div>
 </footer>
