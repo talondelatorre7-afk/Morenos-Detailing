@@ -45,7 +45,7 @@ tags: "sitemap"
             left: 0;
             height: 100%;
             width: 100%;
-            background: rgba(0, 0, 0, 0.5); 
+            background: rgba(0, 0, 0, 0.7); 
             z-index: 1;
         }
 
@@ -65,31 +65,23 @@ tags: "sitemap"
 
     <section id="hero-143">
         <div class="cs-container">
-            <span class="cs-topper">Chino Airport (CNO)</span>
+            <span class="cs-topper">Moreno's High End Detailing</span>
             <h1 class="cs-title">
-                Creative Rotorcraft Maintenance
+                Proper care. <br> Nothing less.
             </h1>
             <p class="cs-text">
-                We provide the best standard of helicopter maintenance services 24 hours a day, 7 days a week. From routine inspections to complete overhauls, our experts keep you flying safely.
+                We don't just wash cars. we restore, protect, and elevate them. Riverside's trusted shop for seamless PPF, true paint correction, and ceramic coatings. From vintage restorations to modern hypercars, we deliver a finish that speaks for itself.
             </p>
-            <a href="/contact/" class="cs-button-solid">Schedule Maintenance</a>
+            <div class="cs-button-group">
+                <a href="/contact/" class="cs-button-solid">Call Now</a>
+            </div>
         </div>
 
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 640, height: 960 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 640, height: 960 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 640, height: 960 }) | jpeg %}" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1024, height: 1024 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1024, height: 1024 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1024, height: 1024 }) | jpeg %}" type="image/jpeg">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1500, height: 1000 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1500, height: 1000 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1500, height: 1000 }) | jpeg %}" type="image/jpeg">
-            <source media="(min-width: 1300px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1920, height: 1080 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1920, height: 1080 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1920, height: 1080 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 1920, height: 1080 }) | jpeg %}" alt="helicopter in hangar" width="1920" height="1080" loading="eager" decoding="async">
-        </picture>
+        <div class="cs-background">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="/assets/images/morenos-hero1.mp4" type="video/mp4">
+            </video>
+        </div>
     </section>
 
     <!-- ============================================ -->
@@ -100,46 +92,56 @@ tags: "sitemap"
         <ul class="cs-card-group">
             <li class="cs-item">
                 <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/mechanic.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+  <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+  <path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/>
+</svg>
                 </picture>
                 <h2 class="cs-title">
-                    24/7 AOG Support
+                    Paint Correction & Detailing
                 </h2>
                 <p class="cs-text">
-                    Superior workmanship with fast turnaround times suited to meet your rigorous flight requirements, available day or night.
+                    Eliminate imperfections and restore a flawless, showroom quality finish with our premium detailing and paint correction.
                 </p>
             </li>
             <li class="cs-item">
                 <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/h1.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  <path d="m9 12 2 2 4-4"/>
+</svg>
                 </picture>
                 <h2 class="cs-title">
-                    Annuals & Overhauls
+                    Ceramic Coating & PPF
                 </h2>
                 <p class="cs-text">
-                    Specializing in 50/100 hour inspections, complete aircraft overhauls, Lycoming engine service, and AD compliance.
+                    Shield your paint from rock chips and the elements using self healing PPF and ultra durable ceramic coatings.
                 </p>
             </li>
             <li class="cs-item">
                 <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-icon">
+  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+  <polyline points="2 12 12 17 22 12"/>
+  <polyline points="2 17 12 22 22 17"/>
+</svg>
                 </picture>
                 <h2 class="cs-title">
-                    New & Used Parts
+                    Custom Wraps & Tinting
                 </h2>
                 <p class="cs-text">
-                    We stock a massive inventory of parts. From bearings to drive shafts, we can source it fast and ship anywhere, anytime.
+                    Elevate your vehicle's style and interior comfort with precision installed custom vinyl wraps and premium window tint.
                 </p>
             </li>
             <li class="cs-item">
                 <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/h2.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/spray1.svg" alt="icon" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Upgrades & Avionics
+                    Restoration & Body Work
                 </h2>
                 <p class="cs-text">
-                    Expert installation of factory retrofit kits (like R44 symmetrical horizontal stabilizers), custom paint, and panel upgrades.
+                    Bring your vehicle back to perfect, factory condition with expert body work and dry ice blasting.
                 </p>
             </li>
         </ul>
@@ -186,7 +188,7 @@ tags: "sitemap"
             </div>
             <!-- Right Content Section-->
             <div class="cs-content">
-                <span class="cs-topper">About CRM</span>
+                <span class="cs-topper">About Morenos</span>
                 <h2 class="cs-title">
                     Precision Aviation Maintenance
                 </h2>

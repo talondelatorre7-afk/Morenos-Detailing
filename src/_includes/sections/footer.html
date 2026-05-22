@@ -7,10 +7,10 @@
         <!-- Logo Group -->
         <div class="cs-logo-group">
             <a aria-label="go back to home" class="cs-logo" href="/">
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo-light.png" alt="Creative Rotorcraft Maintenance logo" width="240" height="32">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo-light.webp" alt="Creative Rotorcraft Maintenance logo" width="240" height="32">
             </a>
             <p class="cs-text">
-                Providing expert, 24/7 helicopter maintenance, overhauls, and AOG support at Chino Airport. We are dedicated to keeping your rotorcraft flying safely and efficiently.
+                Providing precision, high end detailing, paint protection, and body work in Riverside. Licensed, insured, and certified, we are dedicated to elevating your vehicle’s style and preserving its long term value.
             </p>
             <div class="cs-social">
                 <a class="cs-social-link" aria-label="visit google profile" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
@@ -50,7 +50,7 @@
                 <span class="cs-header">Services</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/routine-maintenance/">Routine Maintenance</a>
+                <a class="cs-nav-link" href="/paint-correction/">Paint Correction & Detailing</a>
             </li>
             <li class="cs-nav-li">
                 <a class="cs-nav-link" href="/aog-support/">AOG Support</a>
@@ -87,8 +87,12 @@
     </div>
     <!-- Bottom Footer Copyright -->
         <div class="cs-bottom">
-            <span class="cs-copyright">
-                &copy; 2026 Creative Rotorcraft Maintenance. Designed & Hand Coded by <a href="https://deepseadigital.talondelatorre7.workers.dev/" class="cs-copyright-link" target="_blank" rel="noopener">Deep Sea Digital</a>.
-            </span>
-        </div>
+    <span class="cs-copyright">
+        &copy; <span id="year"></span> Moreno's High End Detailing. Designed & Hand Coded by <a href="https://deepseadigital.online" class="cs-copyright-link" target="_blank" rel="noopener">Deep Sea Digital</a>.
+    </span>
+</div>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </footer>
