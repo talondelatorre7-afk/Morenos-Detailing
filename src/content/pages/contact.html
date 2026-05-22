@@ -8,15 +8,11 @@ permalink: "/contact/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
-    <link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl '/assets/images/construction.jpg' | resize({ width: 576, height: 640 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
-
-    <!-- ============================================ -->
-    <!--                    Banner                    -->
-    <!-- ============================================ -->
 
     <div id="banner-310">
         <div class="cs-container">
@@ -26,27 +22,19 @@ permalink: "/contact/"
                 <a href="/contact/" class="cs-link cs-active">Contact Us</a>
             </div>
         </div>
-        <!--Background Image-->
         <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2500, height: 628 }) | jpeg %}" alt="helicopter on tarmac" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl '/assets/images/shop1.jpg' | resize({ width: 2500, height: 628 }) | jpeg %}" alt="high end auto detailing" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
-
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
 
     <section id="cs-contact-265">
         <div class="cs-container">
@@ -55,44 +43,49 @@ permalink: "/contact/"
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                        Whether you need immediate 24/7 AOG support, are looking to schedule routine maintenance, or have a question about parts and overhauls, our team is ready to help. Fill out the form below and we will get back to you right away.
+                        Ready to elevate your vehicle? Whether you are looking to book a flawless paint correction, secure your investment with seamless PPF, or have questions about our custom wraps, our team in Riverside is ready to help. Fill out the form below and we will get back to you shortly.
                     </p>
                 </div>
-                <!-- Added "netlify" attribute here so Netlify automatically processes submissions -->
-                <form id="cs-form-265" name="Contact Form" method="post" netlify>
-                    <label>
-                        Name
-                        <input required type="text" id="name-265" name="name" placeholder="Name">
-                    </label>
-                    <label>
-                        Email
-                        <input required type="email" id="email-265" name="email" placeholder="Email">
-                    </label>
-                    <label>
-                        Phone
-                        <input required type="tel" id="phone-265" name="phone" placeholder="Phone">
-                    </label>
-                    
-                    <!-- Added Services Dropdown -->
-                    <label>
-                        Service Needed
-                        <select name="Service Needed" id="service-265" required style="width: 100%; padding: 1rem; border: 1px solid #B4B2C7; border-radius: 0.5rem; margin-top: 0.5rem; font-family: inherit; font-size: 1rem; background-color: transparent; color: var(--primary);">
-                            <option value="" disabled selected style="color: var(--primary); background-color: #1a1a1a;">Select a Service</option>
-                            <option value="Routine Maintenance" style="color: var(--primary); background-color: #1a1a1a;">Routine Maintenance</option>
-                            <option value="AOG Support" style="color: var(--primary); background-color: #1a1a1a;">AOG Support (24/7)</option>
-                            <option value="Engine Overhauls" style="color: var(--primary); background-color: #1a1a1a;">Engine Overhauls</option>
-                            <option value="Parts & Avionics" style="color: var(--primary); background-color: #1a1a1a;">Parts & Avionics</option>
-                            <option value="Buy & Sell" style="color: var(--primary); background-color: #1a1a1a;">Buy & Sell</option>
-                            <option value="Other" style="color: var(--primary); background-color: #1a1a1a;">Other / General Inquiry</option>
-                        </select>
-                    </label>
+                <form id="cs-form-265" action="https://api.web3forms.com/submit" method="POST">
+    
+    <input type="hidden" name="access_key" value="bae0f0c6-53c7-44c6-9ae1-f3c67619f70a">
+    
+    <input type="hidden" name="ccemail" value="9099190912@tmomail.net">
+    
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                    <label class="cs-label-message">
-                        Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
-                    </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
-                </form>
+    <label>
+        Name
+        <input required type="text" id="name-265" name="name" placeholder="Name">
+    </label>
+    <label>
+        Email
+        <input required type="email" id="email-265" name="email" placeholder="Email">
+    </label>
+    <label>
+        Phone
+        <input required type="tel" id="phone-265" name="phone" placeholder="Phone">
+    </label>
+    
+    <label>
+        Service Needed
+        <select name="Service Needed" id="service-265" required style="width: 100%; padding: 1rem; border: 1px solid #B4B2C7; border-radius: 0.5rem; margin-top: 0.5rem; font-family: inherit; font-size: 1rem; background-color: transparent; color: var(--primary);">
+            <option value="" disabled selected style="color: var(--primary); background-color: #1a1a1a;">Select a Service</option>
+            <option value="Paint Correction & Detailing" style="color: var(--primary); background-color: #1a1a1a;">Paint Correction & Detailing</option>
+            <option value="Ceramic Coating & PPF" style="color: var(--primary); background-color: #1a1a1a;">Ceramic Coating & PPF</option>
+            <option value="Custom Wraps & Tinting" style="color: var(--primary); background-color: #1a1a1a;">Custom Wraps & Tinting</option>
+            <option value="Restoration & Body Work" style="color: var(--primary); background-color: #1a1a1a;">Restoration & Body Work</option>
+            <option value="Other" style="color: var(--primary); background-color: #1a1a1a;">Other / General Inquiry</option>
+        </select>
+    </label>
+
+    <label class="cs-label-message">
+        Message
+        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+    </label>
+    
+    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+            </form>
             </div>
     </section>
 
