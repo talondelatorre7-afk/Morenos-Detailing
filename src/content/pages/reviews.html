@@ -13,25 +13,21 @@ permalink: "/reviews/"
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    Banner                    -->
-    <!-- ============================================ -->
-
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">Testimonials</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/reviews/" class="cs-link cs-active">Reviews</a>
-            </div>
-        </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <img src="{% getUrl '/assets/images/herotail.jpg' | resize({ width: 2500, height: 628 }) | jpeg %}" alt="helicopter hangar" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
-    </div>
-
+<!--              UNIVERSAL SPACER                -->
+<!-- ============================================ -->
+<div style="margin-top: 4rem; margin-bottom: 0rem; position: relative; z-index: 10;">
+    <!-- 
+        HOW TO ADJUST THE SPACING:
+        Since most sections have built-in padding, use this block to pull them closer or push them apart.
+        
+        - To bring sections CLOSER together: Make the margin-top a larger negative number (e.g., -4rem, -6rem).
+        - To push sections FURTHER apart: Change margin-top to a positive number (e.g., 2rem, 4rem).
+        
+        margin-top: Pulls the bottom section UP (if negative) or pushes it DOWN (if positive).
+        margin-bottom: You can add a positive value here if you want to push the bottom section down even more.
+    -->
+</div>
+<!-- ============================================ -->
     <!-- ============================================ -->
     <!--                   Reviews                    -->
     <!-- ============================================ -->
@@ -40,22 +36,19 @@ permalink: "/reviews/"
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">Our Reputation</span>
-                <h2 class="cs-title">Words From Our Pilots & Owners</h2>
-                <p class="cs-text">
-                    Don't just take our word for it. Read what private pilots, commercial operators, and rotorcraft owners across Southern California have to say about the quality, speed, and precision of the CRM team.
-                </p>
+                <h2 class="cs-title">Words From Our Customers</h2>
             </div>
             <ul class="cs-card-group">
                 <!-- Review 1 -->
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        "We had a ship grounded out in the desert on a Sunday afternoon due to a starter issue. Jose and the AOG team from CRM drove out immediately, diagnosed the problem, and had the part overnighted. We were back in the air by Monday afternoon. Absolutely unmatched response time and professionalism."
+                        "Great service and attention to detail, Eric went above and beyond with a one step correction, even took off my wheels and cleaned the calipers. Will definitely be back in the future for a full paint correction and ppf"
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Mark S.</span>
-                            <span class="cs-desc">Commercial Operator</span>
+                            <span class="cs-name">Carlos Y.</span>
+                            <span class="cs-desc">Customer</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>
@@ -64,12 +57,12 @@ permalink: "/reviews/"
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        "Just got our R44 back from its 12-Year/2200-Hour overhaul at Creative Rotorcraft Maintenance. The attention to detail is staggering—the ship looks and flies like it just rolled out of the Robinson factory. They were fully transparent with pricing and kept us updated with photos throughout the entire tear-down."
+                        "Amazing work done car came back looking like glass after having car polished and ceramic coated made a 25 year old paint job look better than when it came out the dealer."
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">David L.</span>
-                            <span class="cs-desc">R44 Owner</span>
+                            <span class="cs-name">Joseph N.</span>
+                            <span class="cs-desc">Customer</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>
@@ -78,12 +71,12 @@ permalink: "/reviews/"
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        "I used CRM for a pre-buy inspection on an Enstrom I was looking at. Their mechanics caught a subtle tail rotor gearbox issue that three other people missed. They saved me from making a massive financial mistake. I won't let anyone else touch my helicopters."
+                        "Amazing guy very respectful responsive great communication very good work he’s worth the money no one else out there that you can trust with you $100,000 truck/car."
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">James C.</span>
-                            <span class="cs-desc">Private Pilot</span>
+                            <span class="cs-name">Morris M.</span>
+                            <span class="cs-desc">Customer</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>
@@ -92,12 +85,12 @@ permalink: "/reviews/"
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        "The best routine maintenance shop at Chino Airport, hands down. We run a busy flight school and need our 100-hour inspections done safely but quickly. CRM understands our rigorous flight schedule and always gets our R22s tracked, balanced, and back on the flight line without delay."
+                        "He did a 1 step paint correct to my CtsV and it was a mirror! The attention to detail is mind blowing. Recommend him to everyone looking for a detailer!"
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Michael B.</span>
-                            <span class="cs-desc">Flight School Owner</span>
+                            <span class="cs-name">Josue C.</span>
+                            <span class="cs-desc">Customer</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>
@@ -106,12 +99,12 @@ permalink: "/reviews/"
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        "Had CRM install a new glass panel and upgrade our communication radios. The wiring work behind the panel is a work of art—incredibly clean and organized. Everything was flawlessly integrated and complied strictly with FAA standards. Highly recommend their avionics team."
+                        "After having a very bad experience elsewhere, I’m so glad I brought my car to Moreno’s detailing. Erik met with me right away and took the time to explain everything he noticed about my back bumper in detail... The shop was super clean and even smelled amazing. Erik did an outstanding job fixing my back bumper, and the results exceeded my expectations."
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Sarah T.</span>
-                            <span class="cs-desc">R66 Owner</span>
+                            <span class="cs-name">Lidia C.</span>
+                            <span class="cs-desc">Customer</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>
@@ -120,12 +113,12 @@ permalink: "/reviews/"
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        "It is hard to find a shop that actually stocks Robinson parts anymore, but CRM has a massive inventory. I needed an AD compliance kit and they had it on the shelf, ready to go. Great customer service, fair pricing, and true mechanical expertise."
+                        "Best detail I’ve ever had! Pricing was more than fair for what I got in return. Great customer service, communication and professionalism. Thanks Eric and his team!"
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Richard W.</span>
-                            <span class="cs-desc">A&P Mechanic</span>
+                            <span class="cs-name">Gene G.</span>
+                            <span class="cs-desc">Customer</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>
