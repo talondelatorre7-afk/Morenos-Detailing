@@ -1,0 +1,40 @@
+---
+title: "Auto Restoration & Body Work | Moreno's Riverside"
+description: "Expert body work, collision repair, and advanced dry ice blasting in Riverside, CA. Bring your vehicle back to perfect factory condition."
+permalink: "/restoration-body-work/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css">
+{% endblock %}
+
+{% block body %}
+
+    <section id="RPsbs-313" style="padding-top: clamp(8rem, 15vw, 10rem);">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture" style="width: 100%; height: 100%; left: 0; top: 0;">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/service-4.jpg' | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/service-4.jpg' | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl '/assets/images/service-4.jpg' | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="dry ice blasting and auto restoration" width="522" height="581" loading="eager" decoding="async">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Expert Reconditioning</span>
+                <h2 class="cs-title">Bring Your Machine Back to Life</h2>
+                <p class="cs-text">
+                    True high-end automotive care goes beyond the surface. We offer expert body work and restoration services to repair collision damage, dents, and structural imperfections, bringing your vehicle back to its exact factory specifications.
+                </p>
+                <p class="cs-text">
+                    To take your restoration to the highest level, we utilize advanced dry ice blasting. This state-of-the-art process safely strips years of built-up road grime, oil, and rust from your undercarriage and engine bay without using water or harsh chemicals, leaving the raw components looking brand new.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Start Your Restoration</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
